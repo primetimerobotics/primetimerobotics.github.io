@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Company example • Pico.css</title>
+    <meta name="description" content="A classic company or blog layout with a sidebar. Built with Pico CSS.">
+    <link rel="shortcut icon" href="https://picocss.com/favicon.ico">
+    <link rel="canonical" href="https://picocss.com/examples/company/">
+
+    <!-- Pico.css -->
+    <link rel="stylesheet" href="/deps/css/pico.min.css">
+
+    <!-- Custom styles for this example -->
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+
+    <!-- Hero -->
+    <div class="hero" data-theme="dark">
+        <nav class="container-fluid">
+            <ul>
+                <li><a href="/" class="contrast" onclick="event.preventDefault()"><strong>Prime Time</strong></a></li>
+            </ul>
+            <ul>
+                <li>
+                    <details role="list" dir="rtl">
+                        <summary aria-haspopup="listbox" role="link" class="contrast">Theme</summary>
+                        <ul role="listbox">
+                            <li><a href="#" onclick="event.preventDefault()" data-theme-switcher="auto">Auto</a></li>
+                            <li><a href="#" onclick="event.preventDefault()" data-theme-switcher="light">Light</a></li>
+                            <li><a href="#" onclick="event.preventDefault()" data-theme-switcher="dark">Dark</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+    </div><!-- ./ Hero -->
+
+    <!-- Main -->
+    <main class="container">
+        <div class="grid">
+
+            <section>
+                <hgroup>
+                    <h2>About Us</h2>
+                    <h3>Our story as a team</h3>
+                </hgroup>
+                <p>We are a group of students working toward two main goals: to create a FIRST Robotics team with a positive environment and to have some fun in doing so. We are planning on registering by May of 2022 to compete in the 2023 FIRST Robotics season.</p>
+                <figure>
+                    <img src="/images/FIRSTRobotics_iconHorz_RGB_reverse.png" alt="Architecture">
+                    <figcaption>Image from <a href="https://www.firstinspires.org/brand">firstinspires.org</a></figcaption>
+                </figure>
+                <!-- <h3>Some other title</h3>
+                <p>Some other paragraph</h3>
+                <p>Another paragraph</p> -->
+            </section>
+
+            <aside>
+                <a href="/" aria-label="Example"><img
+                        src="/images/banner(1).png" alt="Prime Time Banner"></a>
+                <p>
+                    <a href="/">Home Page</a><br>
+                    <small>About our team and our plans for the future.</small>
+                </p>
+            </aside>
+
+        </div>
+    </main><!-- ./ Main -->
+
+    <!-- Footer -->
+    <footer class="container">
+        <small>Built with <a href="https://picocss.com">Pico</a> • <a
+                href="https://github.com/primetimerobotics/primetimerobotics.github.io">Source code</a></small>
+    </footer><!-- ./ Footer -->
+
+    <!-- Minimal theme switcher -->
+    <script src="/deps/js/minimal-theme-switcher.js"></script>
+
+</body>
+
+</html>
